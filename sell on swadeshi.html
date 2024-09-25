@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/w3.css">
+</head>
+<body class="w3-green">
+
+
+  <form class="w3-container w3-black w3-card-4 w3-display-middle" id="myForm" style="width:40%;">
+    <a href="home.html"><img src="pic/download.png" class="w3-bar-item" style="width: 10%;"></a>
+    <h2 class="w3-text-green w3-center">Your account</h2>
+    <p>      
+    <label class="w3-text-green" id=" first name"><b>First Name</b></label>
+    <input class="w3-input w3-border" name="first" type="text"></p>
+    <p>      
+    <label class="w3-text-green" id="Lastname"><b>Last Name</b></label>
+    <input class="w3-input w3-border" name="last" type="text"></p>
+    </p>
+    <p>      
+    <label class="w3-text-green" id="Email"><b>Email</b></label>
+    <input class="w3-input w3-border" name="Email" type="text"></p>
+    </p>
+    <p>      
+      <label class="w3-text-green" id="Password"><b>Password</b></label>
+      <input class="w3-input w3-border" name="Password" type="text"></p>
+      </p>
+      <p>      
+        <label class="w3-text-green" id="Addres"><b>Address</b></label>
+        <input class="w3-input w3-border" name="Addres" type="text"></p>
+
+    <p>      
+          <label class="w3-text-green" id="productname"><b>Your product Name</b></label>
+          <input class="w3-input w3-border" name="productname" type="text">
+    </p>
+    
+        <input class="w3-check" type="checkbox" checked="checked">
+        <label>Male</label>
+        
+        <input class="w3-check" type="checkbox">
+        <label>Female</label>
+        
+        <input class="w3-check" type="checkbox" disabled>
+        <label>Other</label><br><br>
+                
+    <button class="w3-btn w3-green">Register</button></p>
+  </form>
+     
+
+<script>
+const form = document.getElementById("myForm");
+const firstname = document.getElementById("first name");
+const Lastname = document.getElementById( "Last name");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const Address = document.getElementById("Address");
+const productname = document.getElementById("product name");
+const Male = document.getElementById("Male");
+const Female = document.getElementById("Female");
+const Other = document.getElementById("Other");
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // prevent form submission
+  
+  if (name.value.trim() === "") {
+    alert("Name is required");
+    return false;
+  }
+  
+  if (email.value.trim() === "") {
+    alert("Email is required");
+    return false;
+  }
+  
+  if (password.value.trim() === "") {
+    alert("Password is required");
+    return false;
+  }
+  
+  if (Addres.value.trim() === "") {
+    alert("Address is required");
+    return false;
+  }
+
+  if (productname.value.trim() === "") {
+    alert("productname   is required");
+    return false;
+  }
+  if (Male.value.trim() === "") {
+    alert("select the gender  is required");
+    return false;
+  }
+  if (Female.value.trim() === "") {
+    alert("select the gender is required");
+    return false;
+  }
+  if (Other.value.trim() === "") {
+    alert("select the gender  is required");
+    return false;
+  }
+ 
+  alert("Form submitted successfully");
+  return true;
+});
+
+
+
+</script>
+</body>
+</html> 
